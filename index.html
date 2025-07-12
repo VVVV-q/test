@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tram Makerspace Design Personality Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f0f0; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .question { margin: 15px 0; }
+        .options { margin-left: 20px; }
+        .option { margin: 5px 0; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        #result { display: none; margin-top: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tram Makerspace Design Personality Test</h2>
+        <p>Please rate the following statements (1=Strongly Disagree, 5=Strongly Agree), and submit to receive your design personality traits and considerations!</p>
+
+        <div class="question">
+            <h3>Style Preference</h3>
+            <div>Q1: I hope the makerspace looks like a modern digital workspace
+                <div class="options">
+                    <label class="option"><input type="radio" name="q1" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q1" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q1" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q1" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q1" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q2: I think keeping traditional tram elements (such as wooden seats) will make the space more attractive
+                <div class="options">
+                    <label class="option"><input type="radio" name="q2" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q2" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q2" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q2" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q2" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q3: I think the makerspace is simple and bright in style, not a retro tram atmosphere
+                <div class="options">
+                    <label class="option"><input type="radio" name="q3" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q3" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q3" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q3" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q3" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q4: Digital displays (such as screens) are more suitable for this space than physical decorations
+                <div class="options">
+                    <label class="option"><input type="radio" name="q4" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q4" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q4" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q4" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q4" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Staff vs. Visitor</h3>
+            <div>Q5: Employee storage space is more important than tourist photo area
+                <div class="options">
+                    <label class="option"><input type="radio" name="q5" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q5" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q5" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q5" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q5" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q6: Student workshops can occupy employees' regular office area
+                <div class="options">
+                    <label class="option"><input type="radio" name="q6" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q6" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q6" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q6" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q6" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q7: Soundproof design is a must-have feature of office area
+                <div class="options">
+                    <label class="option"><input type="radio" name="q7" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q7" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q7" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q7" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q7" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q8: Visitor experience should not interfere with employee workflow
+                <div class="options">
+                    <label class="option"><input type="radio" name="q8" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q8" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q8" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q8" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q8" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Resource Strategy</h3>
+            <div>Q9: Old tram parts transformation is the most cost-effective cultural carrier
+                <div class="options">
+                    <label class="option"><input type="radio" name="q9" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q9" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q9" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q9" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q9" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q10: High-tech equipment is worth long-term investment even if it has high maintenance costs
+                <div class="options">
+                    <label class="option"><input type="radio" name="q10" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q10" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q10" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q10" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q10" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q11: Vending machines can effectively subsidize space operations
+                <div class="options">
+                    <label class="option"><input type="radio" name="q11" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q11" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q11" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q11" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q11" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+            <div>Q12: I will explore lower-cost materials when designing
+                <div class="options">
+                    <label class="option"><input type="radio" name="q12" value="1" required> Strongly Disagree</label>
+                    <label class="option"><input type="radio" name="q12" value="2"> Disagree</label>
+                    <label class="option"><input type="radio" name="q12" value="3"> Neutral</label>
+                    <label class="option"><input type="radio" name="q12" value="4"> Agree</label>
+                    <label class="option"><input type="radio" name="q12" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="calculatePersonality()">Submit</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculatePersonality() {
+            // Get selected values, handle unselected cases
+            let q1 = parseInt(document.querySelector('input[name="q1"]:checked')?.value) || 0;
+            let q2 = parseInt(document.querySelector('input[name="q2"]:checked')?.value) || 0;
+            let q3 = parseInt(document.querySelector('input[name="q3"]:checked')?.value) || 0;
+            let q4 = parseInt(document.querySelector('input[name="q4"]:checked')?.value) || 0;
+            let q5 = parseInt(document.querySelector('input[name="q5"]:checked')?.value) || 0;
+            let q6 = parseInt(document.querySelector('input[name="q6"]:checked')?.value) || 0;
+            let q7 = parseInt(document.querySelector('input[name="q7"]:checked')?.value) || 0;
+            let q8 = parseInt(document.querySelector('input[name="q8"]:checked')?.value) || 0;
+            let q9 = parseInt(document.querySelector('input[name="q9"]:checked')?.value) || 0;
+            let q10 = parseInt(document.querySelector('input[name="q10"]:checked')?.value) || 0;
+            let q11 = parseInt(document.querySelector('input[name="q11"]:checked')?.value) || 0;
+            let q12 = parseInt(document.querySelector('input[name="q12"]:checked')?.value) || 0;
+
+            // Validate all questions are answered
+            if ([q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12].includes(0)) {
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('result').innerHTML = '<p class="error">Please select an option for each question!</p>';
+                return;
+            }
+
+            // Calculate average scores for each dimension using (Q1 + (5 - Q2) + Q3 + Q4) / 4
+            let style = (q1 + (6 - q2) + q3 + q4) / 4; // Style Preference
+            let staffVisitor = (q5 + (6 - q6) + q7 + q8) / 4; // Staff vs. Visitor
+            let resource = (q9 + (6 - q10) + q11 + q12) / 4; // Resource Strategy
+
+            // Debug output to verify calculations
+            console.log(`Style: ${style}, StaffVisitor: ${staffVisitor}, Resource: ${resource}`);
+
+            // Determine personality type with fallback for invalid averages
+            let personality = "Unknown";
+            if (!isNaN(style) && !isNaN(staffVisitor) && !isNaN(resource)) {
+                personality = (style > 3 ? "M" : "T") +  "-" +
+                             (staffVisitor > 3 ? "S" : "V") +  "-" +
+                             (resource > 3 ? "E" : "I");
+            } else {
+                console.log("Error: One or more averages are NaN");
+            }
+
+            // Feedback content
+            const feedbacks = {
+                "M-S-E": {
+                    name: " M-S-E Modern Efficiency Coordinator",
+                    traits: "You shine in designing streamlined, tech-driven spaces that prioritize staff needs while maintaining cost efficiency, embodying a pragmatic and modern vision.",
+                    cautions: "You should be cautious about neglecting the tram’s cultural heritage, which might disconnect the space from its historical roots, and strive to weave in cultural elements to enhance its identity."
+                },
+                "M-V-E": {
+                    name:  "M-V-E Modern Visitor Guide",
+                    traits: "You favor a technological aesthetic tailored to visitor enjoyment while keeping expenses low, showcasing a welcoming and innovative spirit.",
+                    cautions: "You need to watch out for sidelining staff priorities, which could lead to a misjudgment that visitors take precedence, potentially disrupting operational flow."
+                },
+                "M-S-I": {
+                    name: "M-S-I Modern Innovation Driver",
+                    traits: "You embrace cutting-edge technology to boost staff productivity while exploring innovative solutions, reflecting a forward-thinking approach.",
+                    cautions: "You must be mindful of rising maintenance costs that could strain the budget, and consider integrating tram heritage to preserve cultural depth."
+                },
+                "M-V-I": {
+                    name: "M-V-I Modern Fusion Explorer",
+                    traits: "You blend modern design with visitor-focused innovation, creating an engaging and tech-savvy environment.",
+                    cautions: "You should take care not to overlook staff needs or budget limits, as this might result in a visitor-centric space that compromises functionality and financial stability."
+                },
+                "T-S-E": {
+                    name: "T-S-E Cultural Guardian",
+                    traits: "You hold dear the tram’s historical charm, prioritizing staff comfort and cost-effectiveness with a traditional touch.",
+                    cautions: "You need to be aware that clients may reject an overly dated feel, requiring modernization of classic elements to ensure practicality and relevance."
+                },
+                "T-V-E": {
+                    name: "T-V-E Cultural Experience Ambassador",
+                    traits: "You value the traditional tram atmosphere and focus on visitor satisfaction while controlling costs, crafting a culturally rich space.",
+                    cautions: "You should guard against prioritizing visitors over staff, which might transform the area into a museum-like setting and hinder its primary purpose."
+                },
+                "T-S-I": {
+                    name: "T-S-I Cultural Innovation Leader",
+                    traits: "You cherish the tram’s heritage while supporting staff needs with innovative ideas, merging past and future seamlessly.",
+                    cautions: "You must watch for high-tech expenses that could exceed the budget, necessitating cost-effective ways to maintain the cultural link."
+                },
+                "T-V-I": {
+                    name: "T-V-I Cultural Fusion Practitioner",
+                    traits: "You combine traditional elements with visitor engagement and innovative features, offering a unique cultural experience.",
+                    cautions: "You need to be cautious about ignoring staff priorities and budget constraints, which could lead to overspending and a lack of focus on the space’s core users."
+                }
+            };
+
+            // Display result
+            let feedback = feedbacks[personality] || { name: "Unknown", traits: "", cautions: "Please contact the instructor for confirmation!" };
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('result').innerHTML = `
+                <h3>Your Design Personality: ${feedback.name}</h3>
+                <p><strong>Traits:</strong> ${feedback.traits}</p>
+                <p><strong>Considerations:</strong> ${feedback.cautions}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
